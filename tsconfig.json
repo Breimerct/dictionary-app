@@ -50,6 +50,18 @@
             ],
             "@types/*": [
                 "src/types/*"
+            ],
+            "@definition-list/*": [
+                "src/components/definition-list/*"
+            ],
+            "@button-play/*": [
+                "src/components/button-play/*"
+            ],
+            "@meanings/*": [
+                "src/components/meanings/*"
+            ],
+            "@plugins/*": [
+                "src/plugins/*"
             ]
         }
     },
