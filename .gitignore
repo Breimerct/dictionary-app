@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 #locks
-/pnpm-lock.yaml
+pnpm-lock.yaml
