@@ -7,7 +7,15 @@ const DarkToggle: FC = () => {
     const [isDark, setIsDark] = useState(isActivaDarkTheme);
 
     useEffect(() => {
+        const isMatchDark = window.matchMedia(
+            '(prefers-color-scheme: dark)',
+        ).matches;
         const docElement = document.documentElement;
+
+        if (localStorage?.dark === undefined && isMatchDark) {
+            setIsDark(isMatchDark);
+            localStorage.setItem('dark', String(isMatchDark));
+        }
 
         isDark
             ? docElement.classList.add('dark')
