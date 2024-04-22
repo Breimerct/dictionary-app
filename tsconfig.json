@@ -44,6 +44,12 @@
             ],
             "@dark-toggle/*": [
                 "src/components/dark-toggle/*"
+            ],
+            "@search-input/*": [
+                "src/components/search-input/*"
+            ],
+            "@types/*": [
+                "src/types/*"
             ]
         }
     },
