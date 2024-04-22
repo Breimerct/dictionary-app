@@ -1,12 +1,10 @@
-import React from 'react';
-import { BookOpenIcon } from '../icons/Icon';
+import { FC } from 'react';
+import NavBar from '@components/navbar/Navbar';
 
-const Header: React.FC = () => {
+const Header: FC = () => {
     return (
-        <header>
-            <figure>
-                <BookOpenIcon size={25} />
-            </figure>
+        <header className="mb-4 p-4">
+            <NavBar />
         </header>
     );
 };
