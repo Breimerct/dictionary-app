@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 
 interface IconProps extends React.HTMLAttributes<HTMLElement> {
-    size: string | number;
+    size?: string | number;
 }
 
-export const BookIcon: React.FC<IconProps> = ({ size, className }) => (
+export const BookIcon: React.FC<IconProps> = ({ size = 30, className }) => (
     <svg
         width={size}
         height={size}
@@ -23,7 +23,7 @@ export const BookIcon: React.FC<IconProps> = ({ size, className }) => (
     </svg>
 );
 
-export const MoonICon: FC<IconProps> = ({ size, className }) => (
+export const MoonICon: FC<IconProps> = ({ size = 30, className }) => (
     <svg
         width={size}
         height={size}
@@ -40,7 +40,7 @@ export const MoonICon: FC<IconProps> = ({ size, className }) => (
     </svg>
 );
 
-export const SunICon: FC<IconProps> = ({ size, className }) => (
+export const SunICon: FC<IconProps> = ({ size = 30, className }) => (
     <svg
         width={size}
         height={size}
@@ -55,5 +55,24 @@ export const SunICon: FC<IconProps> = ({ size, className }) => (
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+    </svg>
+);
+
+export const SearchIcon: FC<IconProps> = ({ size = 30, className }) => (
+    <svg
+        width={size}
+        height={size}
+        className={className}
+        aria-hidden="true"
+        fill="none"
+        viewBox="0 0 20 20"
+    >
+        <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+        />
     </svg>
 );
