@@ -76,3 +76,23 @@ export const SearchIcon: FC<IconProps> = ({ size = 30, className }) => (
         />
     </svg>
 );
+
+export const PlayIcon: FC<IconProps> = ({ size = 30, className }) => (
+    <svg
+        width={size}
+        height={size}
+        className={className}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+            fill="currentColor"
+            d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+        />
+    </svg>
+);
