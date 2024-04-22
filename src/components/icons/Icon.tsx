@@ -1,11 +1,59 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 interface IconProps extends React.HTMLAttributes<HTMLElement> {
     size: string | number;
 }
 
-export const BookOpenIcon: React.FC<IconProps> = ({ size, className }) => (
-    <svg width={size} height={size} className={className} viewBox="0 0 24 24">
-        <path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23-1.77 0-3.27.28-4.5.84v1.66m4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5Z" />
+export const BookIcon: React.FC<IconProps> = ({ size, className }) => (
+    <svg
+        width={size}
+        height={size}
+        className={className}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z" />
+        <path d="M19 16h-12a2 2 0 0 0 -2 2" />
+        <path d="M9 8h6" />
+    </svg>
+);
+
+export const MoonICon: FC<IconProps> = ({ size, className }) => (
+    <svg
+        width={size}
+        height={size}
+        className={className}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+);
+
+export const SunICon: FC<IconProps> = ({ size, className }) => (
+    <svg
+        width={size}
+        height={size}
+        className={className}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+        <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
     </svg>
 );
