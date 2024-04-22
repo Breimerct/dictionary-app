@@ -37,19 +37,14 @@ const DefinitionList: FC<DefinitionListProp> = ({ definitions }) => {
 
                 <article className="mt-4 flex gap-2">
                     <p className="font-bold m-0">Source: </p>
-                    {sourceUrls.map((sourceUrl, _) => (
-                        <div>
-                            <a
-                                href={sourceUrl}
-                                target="_blank"
-                                className="relative underline transition-transform hover:scale-105 flex flex-nowrap items-center gap-1"
-                            >
-                                {sourceUrl}
-                                <ExternalLinkIcon size={16} />
-                                {_ !== sourceUrls.length - 1 && ', '}
-                            </a>
-                        </div>
-                    ))}
+                    <a
+                        href={sourceUrls[0]}
+                        target="_blank"
+                        className="relative underline transition-transform hover:scale-105 flex flex-nowrap items-center gap-1"
+                    >
+                        {sourceUrls[0]}
+                        <ExternalLinkIcon size={16} />
+                    </a>
                 </article>
 
                 {index !== definitions.length - 1 && <hr className="my-14" />}
