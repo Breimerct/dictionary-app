@@ -19,7 +19,7 @@ function App() {
     };
 
     return (
-        <main className="min-h-screen md:w-[70%] lg:w-[50%] mb-10 mx-6 md:mx-auto">
+        <main className="min-h-screen transition-all md:w-[70%] lg:w-[50%] mb-10 mx-6 md:mx-auto">
             <Header />
             <SearchInput onSubmit={handleSubmit} />
 
