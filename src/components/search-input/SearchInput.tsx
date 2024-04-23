@@ -10,10 +10,15 @@ const SearchInput: FC<ISearchInputProps> = ({ label = 'Search', onSubmit }) => {
     const handleSubmit = (event: FormEvent) => {
         event.preventDefault();
         const formElement = event.target as HTMLFormElement;
+        const $searchInput = formElement.elements.namedItem(
+            'search',
+        ) as HTMLInputElement;
+
         const formData = new FormData(formElement);
         const searchText = formData.get('search')?.toString();
 
         !!searchText && onSubmit(searchText);
+        $searchInput.blur();
     };
 
     return (
