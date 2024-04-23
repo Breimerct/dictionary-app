@@ -1,5 +1,5 @@
 import { FC, FormEvent } from 'react';
-import { SearchIcon } from '../icons/Icon';
+import { SearchIcon } from '@components/icons/Icon';
 
 interface ISearchInputProps {
     label?: string;

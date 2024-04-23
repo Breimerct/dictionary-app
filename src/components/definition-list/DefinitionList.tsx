@@ -1,8 +1,8 @@
-import { DefinitionResult } from '@/types';
 import { FC } from 'react';
-import ButtonPlay from '../button-play/ButtonPlay';
-import Meanings from '../meanings/Meanings';
-import { ExternalLinkIcon } from '../icons/Icon';
+import { DefinitionResult } from '@/types';
+import ButtonPlay from '@components/button-play/ButtonPlay';
+import { ExternalLinkIcon } from '@components/icons/Icon';
+import Meanings from '@components/meanings/Meanings';
 
 interface DefinitionListProp {
     definitions: DefinitionResult[];

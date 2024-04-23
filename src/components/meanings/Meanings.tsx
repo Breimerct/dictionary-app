@@ -1,5 +1,5 @@
-import { Meaning } from '@/types';
 import { FC } from 'react';
+import { Meaning } from '@/types';
 
 interface MeaningsProps {
     meanings: Meaning[];

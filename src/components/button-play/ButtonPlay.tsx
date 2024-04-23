@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { PlayIcon } from '../icons/Icon';
+import { PlayIcon } from '@components/icons/Icon';
 
 interface ButtonPlayProps {
     audioUrl: string;

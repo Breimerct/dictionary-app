@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import Header from '@/components/header/Header';
-import SearchInput from '@/components/search-input/SearchInput';
-import { getDefinition } from '@/services/dictionary.service';
+import Header from '@components/header/Header';
+import SearchInput from '@components/search-input/SearchInput';
+import { getDefinition } from '@services/dictionary.service';
 import { DefinitionResult } from '@/types';
 import './App.scss';
-import DefinitionList from '@/components/definition-list/DefinitionList';
+import DefinitionList from '@components/definition-list/DefinitionList';
 
 function App() {
     const [definitions, setDefinitions] = useState<DefinitionResult[]>();

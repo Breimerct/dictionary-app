@@ -1,4 +1,4 @@
-import { httpClient } from '@/plugins/axios';
+import { httpClient } from '@plugins/axios';
 import type { Phonetic, ApiResponse, DefinitionResult } from '@/types';
 
 interface IAxiosError {

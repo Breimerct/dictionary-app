@@ -11,7 +11,7 @@ export default defineConfig({
             prefix: '@', // Prefijo para los alias de rutas
             deep: true, // Permite buscar en subdirectorios
             depth: 1, // Nivel de profundidad para la búsqueda de subdirectorios (1 para el primer nivel)
-            createGlobalAlias: true, // Crea un alias global para el directorio del proyecto
+            createGlobalAlias: false, // Crea un alias global para el directorio del proyecto
         }),
     ],
 });

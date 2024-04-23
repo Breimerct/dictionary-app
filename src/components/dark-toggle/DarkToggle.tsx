@@ -1,6 +1,6 @@
-import { getLocalStoreDark } from '@/services/dark.service';
 import { ChangeEvent, FC, useEffect, useState } from 'react';
-import { MoonICon, SunICon } from '../icons/Icon';
+import { getLocalStoreDark } from '@services/dark.service';
+import { MoonICon, SunICon } from '@components/icons/Icon';
 
 const DarkToggle: FC = () => {
     const isActivaDarkTheme = getLocalStoreDark();

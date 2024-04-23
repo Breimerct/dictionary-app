@@ -1,5 +1,5 @@
-import DarkToggle from '../dark-toggle/DarkToggle';
-import { BookIcon } from '../icons/Icon';
+import DarkToggle from '@components/dark-toggle/DarkToggle';
+import { BookIcon } from '@components/icons/Icon';
 
 const NavBar = () => {
     return (
