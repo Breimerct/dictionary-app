@@ -35,16 +35,27 @@ const DefinitionList: FC<DefinitionListProp> = ({ definitions }) => {
                     <Meanings meanings={meanings} />
                 </article>
 
-                <article className="mt-4 flex gap-2">
+                <article className="mt-4 flex flex-col gap-2">
                     <p className="font-bold m-0">Source: </p>
-                    <a
-                        href={sourceUrls[0]}
-                        target="_blank"
-                        className="relative underline transition-transform hover:scale-105 flex flex-nowrap items-center gap-1"
-                    >
-                        {sourceUrls[0]}
-                        <ExternalLinkIcon size={16} />
-                    </a>
+                    <div className="w-full flex gap-2">
+                        <ul className="list-disc marker:text-purple-800 dark:marker:text-purple-400">
+                            {sourceUrls.map((url) => (
+                                <li key={url} className="ml-10">
+                                    <a
+                                        href={url}
+                                        target="_blank"
+                                        className="underline flex items-center gap-1"
+                                    >
+                                        {url}
+                                        <ExternalLinkIcon
+                                            size={15}
+                                            className="invisible md:visible"
+                                        />
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </article>
 
                 {index !== definitions.length - 1 && <hr className="my-14" />}

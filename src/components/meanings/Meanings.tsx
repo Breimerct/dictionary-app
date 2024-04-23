@@ -13,7 +13,7 @@ const Meanings: FC<MeaningsProps> = ({ meanings }) => {
                     {partOfSpeech}
                 </h1>
 
-                <ul className="flex flex-col gap-2 list-disc marker:text-purple-800 dark:marker:text-purple-400">
+                <ul className="list-disc marker:text-purple-800 dark:marker:text-purple-400">
                     {definitions.map(({ definition }, index) => (
                         <li key={index} className="ml-4">
                             {definition}
